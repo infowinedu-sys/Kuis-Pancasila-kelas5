@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pancasila Racing Quiz — Kelas 5</title>
+<title>Pancasila Racing Quiz — Grade 5</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -829,20 +829,20 @@ input { font-family: inherit; }
           Master <span class="accent">Pancasila</span>.
         </h1>
         <p class="hero-sub">
-          40 soal situasi nyata tentang penerapan Pancasila dan norma dalam kehidupan sehari-hari. Jawab benar, mobilmu melaju. Jawab salah, mobil diam.
+          40 real-life situational questions about applying Pancasila and norms in daily life. Answer correctly and your car moves forward. Answer wrong and the car stays still.
         </p>
         <div class="hero-features">
           <div class="hero-feature">
             <span class="hero-feature-icon">⚡</span>
-            <span>40 soal · 50 detik per soal</span>
+            <span>40 questions · 50 seconds each</span>
           </div>
           <div class="hero-feature">
             <span class="hero-feature-icon">🎯</span>
-            <span>Bonus waktu & streak multiplier</span>
+            <span>Time bonus &amp; streak multiplier</span>
           </div>
           <div class="hero-feature">
             <span class="hero-feature-icon">📊</span>
-            <span>Laporan lengkap + ekspor CSV</span>
+            <span>Full report &amp; CSV export</span>
           </div>
         </div>
         <div class="hero-road">
@@ -851,21 +851,21 @@ input { font-family: inherit; }
       </div>
 
       <div class="login-card">
-        <h2>Selamat datang</h2>
-        <p class="card-sub">Masukkan nama dan kelasmu untuk memulai balapan. Hasil akan disimpan untuk laporan kelas.</p>
+        <h2>Welcome back</h2>
+        <p class="card-sub">Enter your name and class to begin the race. Your results will be saved for the class report.</p>
         <div class="field">
-          <label class="field-label" for="studentName">Nama Lengkap</label>
-          <input type="text" class="field-input" id="studentName" placeholder="mis. Aditya Pratama" maxlength="40" autocomplete="off">
-          <div class="field-error" id="nameError">Silakan isi namamu untuk melanjutkan.</div>
+          <label class="field-label" for="studentName">Full Name</label>
+          <input type="text" class="field-input" id="studentName" placeholder="e.g. Aditya Pratama" maxlength="40" autocomplete="off">
+          <div class="field-error" id="nameError">Please enter your name to continue.</div>
         </div>
         <div class="field">
-          <label class="field-label" for="studentClass">Kelas</label>
-          <input type="text" class="field-input" id="studentClass" placeholder="mis. 5A" maxlength="20" autocomplete="off">
-          <div class="field-error" id="classError">Silakan isi kelasmu untuk melanjutkan.</div>
+          <label class="field-label" for="studentClass">Class</label>
+          <input type="text" class="field-input" id="studentClass" placeholder="e.g. 5A" maxlength="20" autocomplete="off">
+          <div class="field-error" id="classError">Please enter your class to continue.</div>
         </div>
-        <button class="btn btn-primary btn-block" id="startBtn">Mulai Balapan →</button>
+        <button class="btn btn-primary btn-block" id="startBtn">Start Racing →</button>
         <div class="login-footer">
-          <button class="btn btn-text" id="viewHistoryBtn">📊 Lihat Riwayat / Laporan</button>
+          <button class="btn btn-text" id="viewHistoryBtn">📊 View History / Report</button>
         </div>
       </div>
     </div>
@@ -877,19 +877,19 @@ input { font-family: inherit; }
       <div class="player-chip">
         <div class="avatar" id="avatar">?</div>
         <div class="player-info">
-          <div class="player-name" id="playerName">Pemain</div>
-          <div class="player-role" id="playerRole">Pembalap · Kelas -</div>
+          <div class="player-name" id="playerName">Player</div>
+          <div class="player-role" id="playerRole">Racer · Class -</div>
         </div>
       </div>
-      <button class="icon-btn" id="muteBtn" title="Suara" aria-label="Toggle suara">
+      <button class="icon-btn" id="muteBtn" title="Sound" aria-label="Toggle sound">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
       </button>
     </div>
 
     <div class="track-wrap">
       <div class="track-head">
-        <span class="track-title">🏁 Progres Balapan</span>
-        <span class="track-progress-label" id="progressLabel">0% menuju finish</span>
+        <span class="track-title">🏁 Race Progress</span>
+        <span class="track-progress-label" id="progressLabel">0% to finish</span>
       </div>
       <div class="road" id="road">
         <div class="checkpoint" style="left:25%"></div>
@@ -905,13 +905,13 @@ input { font-family: inherit; }
     <div class="quiz-grid">
       <div class="question-card">
         <div class="q-head">
-          <span class="q-badge" id="qBadge">Soal 1</span>
-          <span class="q-chapter" id="qChapter">Bab 1</span>
+          <span class="q-badge" id="qBadge">Question 1</span>
+          <span class="q-chapter" id="qChapter">Chapter 1</span>
         </div>
         <p class="q-text" id="qText"></p>
         <div class="options" id="options"></div>
         <div class="feedback" id="feedback" aria-live="polite"></div>
-        <button class="next-btn" id="nextBtn">Soal Berikutnya →</button>
+        <button class="next-btn" id="nextBtn">Next Question →</button>
       </div>
 
       <aside class="side-panel">
@@ -923,20 +923,20 @@ input { font-family: inherit; }
             </svg>
             <div class="timer-value">
               <span class="timer-num" id="timerNum">50</span>
-              <span class="timer-unit">DETIK</span>
+              <span class="timer-unit">SEC</span>
             </div>
           </div>
-          <span class="timer-caption">Sisa Waktu</span>
+          <span class="timer-caption">Time Remaining</span>
         </div>
 
         <div class="stat-grid">
           <div class="stat-card" id="statScore">
             <span class="stat-val" id="scoreVal">0</span>
-            <span class="stat-lbl">Skor</span>
+            <span class="stat-lbl">Score</span>
           </div>
           <div class="stat-card green" id="statCorrect">
             <span class="stat-val" id="correctVal">0</span>
-            <span class="stat-lbl">Benar</span>
+            <span class="stat-lbl">Correct</span>
           </div>
           <div class="stat-card orange" id="statStreak">
             <span class="stat-val" id="streakVal">0</span>
@@ -958,28 +958,28 @@ input { font-family: inherit; }
           </svg>
           <div class="result-percent">
             <span class="result-percent-num" id="resultPercent">0%</span>
-            <span class="result-percent-lbl">Akurasi</span>
+            <span class="result-percent-lbl">Accuracy</span>
           </div>
         </div>
         <div>
-          <h2 class="result-title" id="resultTitle">Kerja Bagus!</h2>
+          <h2 class="result-title" id="resultTitle">Great Job!</h2>
           <p class="result-msg" id="resultMsg"></p>
         </div>
       </div>
 
       <div class="result-stats">
-        <div class="result-stat"><span class="result-stat-val" id="rScore">0</span><span class="result-stat-lbl">Skor</span></div>
-        <div class="result-stat green"><span class="result-stat-val" id="rCorrect">0</span><span class="result-stat-lbl">Benar</span></div>
-        <div class="result-stat red"><span class="result-stat-val" id="rWrong">0</span><span class="result-stat-lbl">Salah</span></div>
-        <div class="result-stat orange"><span class="result-stat-val" id="rStreak">0</span><span class="result-stat-lbl">Streak Terbaik</span></div>
+        <div class="result-stat"><span class="result-stat-val" id="rScore">0</span><span class="result-stat-lbl">Score</span></div>
+        <div class="result-stat green"><span class="result-stat-val" id="rCorrect">0</span><span class="result-stat-lbl">Correct</span></div>
+        <div class="result-stat red"><span class="result-stat-val" id="rWrong">0</span><span class="result-stat-lbl">Wrong</span></div>
+        <div class="result-stat orange"><span class="result-stat-val" id="rStreak">0</span><span class="result-stat-lbl">Best Streak</span></div>
       </div>
 
       <div class="chapter-breakdown" id="chapterBreakdown"></div>
 
       <div class="result-actions">
-        <button class="btn btn-primary" id="playAgainBtn">🔄 Main Lagi</button>
-        <button class="btn btn-secondary" id="viewReportBtn">📊 Lihat Laporan</button>
-        <button class="btn btn-text" id="logoutBtn">Keluar</button>
+        <button class="btn btn-primary" id="playAgainBtn">🔄 Play Again</button>
+        <button class="btn btn-secondary" id="viewReportBtn">📊 View Report</button>
+        <button class="btn btn-text" id="logoutBtn">Exit</button>
       </div>
     </div>
   </div>
@@ -989,19 +989,19 @@ input { font-family: inherit; }
     <div class="history-card">
       <div class="history-head">
         <div class="history-title-wrap">
-          <h1>Laporan Siswa</h1>
-          <p>Semua riwayat tersimpan di perangkat ini</p>
+          <h1>Student Report</h1>
+          <p>All attempts saved on this device</p>
         </div>
         <div class="history-actions">
-          <button class="btn btn-success" id="exportBtn" style="padding:10px 16px;font-size:13px;">⬇ Ekspor CSV</button>
-          <button class="btn btn-secondary" id="backBtn" style="padding:10px 16px;font-size:13px;">← Kembali</button>
+          <button class="btn btn-success" id="exportBtn" style="padding:10px 16px;font-size:13px;">⬇ Export CSV</button>
+          <button class="btn btn-secondary" id="backBtn" style="padding:10px 16px;font-size:13px;">← Back</button>
         </div>
       </div>
 
       <div class="history-summary" id="historySummary"></div>
 
       <div class="history-toolbar">
-        <input type="text" class="history-search" id="historySearch" placeholder="🔍 Cari nama siswa…">
+        <input type="text" class="history-search" id="historySearch" placeholder="🔍 Search student name...">
       </div>
 
       <div id="historyBody"></div>
@@ -1014,134 +1014,134 @@ input { font-family: inherit; }
 
 <script>
 /* ============================================================
-   40 SOAL — Pancasila Kelas 5 (Situational)
+   40 QUESTIONS — Pancasila Grade 5 (Situational)
    ============================================================ */
 const questions = [
-  // PART 1 — Bab 1: Applying Pancasila (10 soal)
-  { ch: "Bab 1 · Sila 1–5",
+  // PART 1 — Chapter 1: Applying Pancasila (10 questions)
+  { ch: "Chapter 1 · Principles 1–5",
     q: "You notice that your new classmate is eating alone during break time because she brings food from a different culture. What is the best action according to the 3rd Principle of Pancasila (Unity)?",
     o: ["Ignore her because she is different.","Invite her to sit and eat with you and your friends.","Laugh at the food she brought.","Tell her to eat somewhere else."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "Your group is having a discussion about a school project. One of your friends gives a silly idea. How should you respond?",
     o: ["Laugh at him and tell him his idea is stupid.","Ignore him and do the project by yourself.","Listen politely and then suggest a better idea together.","Ask the teacher to remove him from the group."], a: 2 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "During a class vote for the field trip destination, your favorite place loses. What should you do?",
     o: ["Refuse to go on the trip.","Accept the result and join the trip happily.","Complain to your parents.","Sulk in the corner all day."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "A friend from a different religion is praying. What is the most respectful thing to do?",
     o: ["Make noise so he finishes quickly.","Wait quietly and don't disturb him.","Ask him why he prays differently.","Tell him to stop praying."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "You are in a study group. You have the highest grades. Your friend is struggling with math. How do you apply the 2nd Principle (Humanity)?",
     o: ["Tell him he is not smart enough.","Help him understand the math problems patiently.","Let him copy your answers.","Ignore him and focus on your own work."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "The classroom is very messy after an art project. Everyone is tired. What shows the 5th Principle (Social Justice)?",
     o: ["Point at the janitor and tell him to clean it.","Expect the smartest students to clean up.","Work together fairly to clean the classroom.","Leave the mess and go home."], a: 2 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "A new student from another island joins your class. He speaks with a different accent. What should you do?",
     o: ["Try to learn his accent to make fun of him.","Treat him like any other friend and help him adjust.","Ask him to change his accent to fit in.","Avoid talking to him so he doesn't feel embarrassed."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "You see a younger student being bullied by someone bigger. What is the best action?",
     o: ["Watch and laugh.","Fight the bully immediately.","Report it to a teacher and help the younger student.","Pretend you didn't see anything."], a: 2 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "Which action shows the application of the 5th Principle (Social Justice) in sharing snacks?",
     o: ["Taking the biggest piece for yourself.","Dividing the snack equally among your friends.","Hiding the snack so no one asks for it.","Giving the smallest piece to a friend you don't like."], a: 1 },
-  { ch: "Bab 1 · Sila 1–5",
+  { ch: "Chapter 1 · Principles 1–5",
     q: "In a discussion, your friend is talking, but you disagree with her. What should you do?",
     o: ["Cut her off and say she is wrong.","Let her finish, then calmly explain your opinion.","Walk away from the discussion.","Tell everyone not to listen to her."], a: 1 },
 
-  // PART 2 — Bab 2: Understanding Norms (10 soal)
-  { ch: "Bab 2 · Norma",
+  // PART 2 — Chapter 2: Understanding Norms (10 questions)
+  { ch: "Chapter 2 · Norms",
     q: "You are riding a motorcycle with your dad. You arrive at a red light, and there are no other cars. What should your dad do?",
     o: ["Cross the road because it's empty.","Stop and wait for the green light.","Turn left to avoid the traffic light.","Drive faster to cross quickly."], a: 1 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "You find a wallet with money and an ID card in the school bathroom. No one is watching. What do you do?",
     o: ["Keep the money and throw away the ID.","Take the money to buy food at the canteen.","Give it to the teacher so it can be returned to its owner.","Leave it there and ignore it."], a: 2 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "An older neighbor is carrying heavy groceries. You are in a hurry to play. What is the polite thing to do?",
     o: ["Pretend you don't see her.","Offer to help her carry the bags.","Run away so she doesn't ask you.","Tell her she should carry them herself."], a: 1 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "Your family is having dinner. Before eating, your parents remind you to pray. Which norm is being applied?",
     o: ["Legal Norm","Religious Norm","Courtesy Norm","Moral Norm"], a: 1 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "You accidentally bump into someone in the hallway. What is the best example of a Courtesy Norm (Etiquette)?",
     o: ["Say \"Excuse me\" or \"Sorry.\"","Quickly run away so they don't get angry.","Laugh and keep walking.","Tell them they were standing in your way."], a: 0 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "A student is given a homework assignment. He decides to copy his friend's work instead of doing it himself. What norm is he violating?",
     o: ["Legal Norm","Moral Norm (Honesty)","Courtesy Norm","Religious Norm"], a: 1 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "You are at a public park. You have an empty plastic bottle. The trash can is 10 meters away. What do you do?",
     o: ["Throw it under the bench.","Leave it on the grass.","Hold onto it until you reach the trash can.","Give it to a friend to throw away secretly."], a: 2 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "During a school assembly, the principal is giving a speech. What is the respectful thing to do?",
     o: ["Talk with your friends in the back row.","Play games on your phone.","Listen quietly and pay attention.","Run around the field."], a: 2 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "A friend invites you to his birthday party. You are the only one there from a different religion. How do you apply the 1st Principle?",
     o: ["Refuse to attend because it's not your holiday.","Attend, wish him well, and respect the party's customs.","Go but sit in the corner and complain.","Ask him to change the party rules for you."], a: 1 },
-  { ch: "Bab 2 · Norma",
+  { ch: "Chapter 2 · Norms",
     q: "Which of the following is an example of a Legal Norm in the community?",
     o: ["Wearing polite clothes when visiting a friend.","Paying income tax on time.","Saying \"thank you\" after receiving help.","Feeling guilty after lying to a parent."], a: 1 },
 
-  // PART 3 — Bab 2: Rights and Duties (10 soal)
-  { ch: "Bab 2 · Hak & Kewajiban",
+  // PART 3 — Chapter 2: Rights and Duties (10 questions)
+  { ch: "Chapter 2 · Rights & Duties",
     q: "You have the right to use the school library. What is your duty when using it?",
     o: ["Tear out pages you like.","Keep the books forever.","Return the books on time and keep them clean.","Make loud noises with your friends."], a: 2 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "Your mother asks you to sweep the floor, but you want to keep playing a video game. What is the right thing to do?",
     o: ["Pretend you didn't hear her.","Ask your sibling to do it.","Pause the game and help your mother.","Throw a tantrum."], a: 2 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "You see a classmate being excluded from a group because he is poor. What right is being violated?",
     o: ["The right to an education.","The right to be treated equally and fairly.","The right to eat food.","The right to play."], a: 1 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "In your classroom discussion, everyone wants to speak at the same time. It gets very noisy. What is the best solution?",
     o: ["The loudest person gets to speak.","The teacher forces only one person to talk.","The class agrees to raise hands and take turns speaking.","Everyone stops talking and goes home."], a: 2 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "You are the class leader. A friend asks you to give him a higher grade on his report card in exchange for a gift. What do you do?",
     o: ["Accept the gift and change the grade.","Refuse the gift and explain that fairness is more important.","Change the grade but only for a bigger gift.","Tell the whole class and embarrass him."], a: 1 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "A classmate is throwing trash out of the window. You want to remind him. Which approach is the most polite?",
     o: ["Yell at him in front of the whole class.","Report him directly to the principal.","Politely tell him to throw it in the trash can nearby.","Throw the trash back at him."], a: 2 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "Which of these is a right of a student at school?",
     o: ["Getting free food every day.","Getting a safe and comfortable learning environment.","Not having to do any homework.","Being allowed to skip class whenever they want."], a: 1 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "As a citizen, what is a duty when you cross the street?",
     o: ["Crossing anywhere you want.","Using a phone while crossing.","Crossing at the zebra cross and looking both ways.","Running very fast without looking."], a: 2 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "Your friend is cheating during an exam. He asks you to be quiet and not tell the teacher. What should you do?",
     o: ["Keep quiet because he is your friend.","Ask him to stop and warn him that you will report it if he continues.","Help him cheat by giving him answers.","Tell the teacher immediately without warning."], a: 1 },
-  { ch: "Bab 2 · Hak & Kewajiban",
+  { ch: "Chapter 2 · Rights & Duties",
     q: "In a gotong royong (community service) event at school, your group is assigned to clean the drains. You think it's a dirty job. What should you do?",
     o: ["Ask to swap with another group.","Do it half-heartedly.","Do it with your group, because it's a shared duty.","Refuse to do it."], a: 2 },
 
-  // PART 4 — Bab 1 & 2 Combined: Real-Life Problem Solving (10 soal)
-  { ch: "Bab 1 & 2 · Problem Solving",
+  // PART 4 — Chapters 1 & 2 Combined: Real-Life Problem Solving (10 questions)
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are chosen as the leader of your study group. What is the best way to show fairness (5th Principle)?",
     o: ["Do all the work yourself so your friends don't make mistakes.","Give the hardest tasks to friends you don't like.","Divide the tasks equally based on everyone's strengths.","Do nothing and let your friends work."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You see a fight between two older students in the schoolyard. You cannot stop them alone. What is the best action?",
     o: ["Join the fight.","Record it with your phone.","Call a teacher or security guard immediately.","Tell your friends to watch."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "Which behavior reflects the 3rd Principle (Unity) during a class election for the school's student council?",
     o: ["Only voting for friends from your own region.","Accepting whoever wins the election and supporting them.","Being angry if your candidate loses.","Writing bad things about the other candidates."], a: 1 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "A friend is fasting for religious reasons. You are eating in front of him. What should you do?",
     o: ["Eat loudly to tease him.","Ask him to join you.","Eat respectfully and try not to tempt him.","Tell him he shouldn't fast."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are at a friend's house. You want to use the bathroom. What is the polite thing to do?",
     o: ["Just walk in and look for it.","Ask your friend or his parents for permission.","Use the bathroom without washing your hands.","Look through all the doors to find it."], a: 1 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "Your class is planning a \"Clean Classroom\" project. What is the best way to decide on the activities?",
     o: ["The class leader decides everything alone.","The teacher orders the students what to do.","The students brainstorm ideas and vote together (Musyawarah).","The smartest student makes the plan."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are given Rp 50,000 to buy class supplies. You spend Rp 45,000 on the supplies. What should you do with the remaining Rp 5,000?",
     o: ["Keep it for your own snacks.","Give it to a friend.","Return it to the class treasurer or teacher.","Drop it on the floor."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are walking on a sidewalk and see a blind person trying to cross the street. What is the best action?",
     o: ["Ignore them.","Laugh at them.","Help them cross the street safely.","Walk faster so you don't get in their way."], a: 2 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are playing soccer with your friends. A friend breaks a rule during the game. What should you do?",
     o: ["Stop the game and fight him.","Remind him of the rule and continue the game.","Break the rule too, since he did it.","Tell your friends to kick him out of the game."], a: 1 },
-  { ch: "Bab 1 & 2 · Problem Solving",
+  { ch: "Chapters 1 & 2 · Problem Solving",
     q: "You are asked to clean the whiteboard by your teacher, but you are not the class cleaning officer. You don't want to do it. What is the right mindset?",
     o: ["Refuse because it's not your job.","Do it while complaining loudly.","Do it willingly as a form of responsibility to the class.","Ask someone else to do it for you."], a: 2 }
 ];
@@ -1149,7 +1149,7 @@ const questions = [
 const TOTAL = questions.length;
 const TIME_PER_Q = 50;
 const LETTERS = ["A","B","C","D"];
-const STORAGE_KEY = "pancasila_racing_kelas5_v1";
+const STORAGE_KEY = "pancasila_racing_g5_en_v1";
 const RING_CIRC = 2 * Math.PI * 44;
 
 /* ============================================================
@@ -1306,8 +1306,6 @@ $("startBtn").addEventListener("click", () => {
 ["studentName", "studentClass"].forEach(id => {
   $(id).addEventListener("input", () => {
     $(id).classList.remove("error");
-    $(id + "Error") && $(id + "Error").classList.remove("show");
-    // fallback: hide both errors
     $("nameError").classList.remove("show");
     $("classError").classList.remove("show");
   });
@@ -1334,7 +1332,7 @@ function startGame() {
 
   updateHUD();
   $("playerName").textContent = playerName;
-  $("playerRole").textContent = "Pembalap · Kelas " + playerClass;
+  $("playerRole").textContent = "Racer · Class " + playerClass;
   const avatar = $("avatar");
   avatar.textContent = playerName.charAt(0).toUpperCase();
   avatar.style.background = hashColor(playerName);
@@ -1349,14 +1347,14 @@ function renderQuestion() {
   lastWarnTick = -1;
   const q = questions[idx];
 
-  $("qBadge").textContent = "Soal " + (idx + 1);
+  $("qBadge").textContent = "Question " + (idx + 1);
   $("qChapter").textContent = q.ch;
   $("qText").textContent = q.q;
 
   $("feedback").className = "feedback";
   $("feedback").textContent = "";
   $("nextBtn").classList.remove("show");
-  $("nextBtn").textContent = (idx === TOTAL - 1) ? "🏁 Lihat Hasil" : "Soal Berikutnya →";
+  $("nextBtn").textContent = (idx === TOTAL - 1) ? "🏁 See Results" : "Next Question →";
 
   $("options").innerHTML = "";
   q.o.forEach((text, i) => {
@@ -1438,7 +1436,7 @@ function handleTimeout() {
   pulseStat($("statStreak"));
 
   $("feedback").className = "feedback no show";
-  $("feedback").textContent = `⏰ Waktu habis! Jawaban benar: ${LETTERS[q.a]}. ${q.o[q.a]}`;
+  $("feedback").textContent = `⏰ Time's up! Correct answer: ${LETTERS[q.a]}. ${q.o[q.a]}`;
   $("nextBtn").classList.add("show");
   sfx.timeUp();
 }
@@ -1480,7 +1478,7 @@ function selectAnswer(chosen) {
     pulseStat($("statCorrect"));
 
     $("feedback").className = "feedback ok show";
-    $("feedback").textContent = `✅ Benar! +${gained} poin (${timeBonus} bonus waktu · ${streakBonus} bonus streak). Mobil melaju!`;
+    $("feedback").textContent = `✅ Correct! +${gained} points (${timeBonus} time bonus · ${streakBonus} streak bonus). The car moves forward!`;
     $("nextBtn").classList.add("show");
 
     moveCar(true);
@@ -1493,7 +1491,7 @@ function selectAnswer(chosen) {
     pulseStat($("statStreak"));
 
     $("feedback").className = "feedback no show";
-    $("feedback").textContent = `❌ Kurang tepat. Mobil diam. Jawaban benar: ${LETTERS[q.a]}. ${q.o[q.a]}`;
+    $("feedback").textContent = `❌ Not quite. The car stays still. Correct answer: ${LETTERS[q.a]}. ${q.o[q.a]}`;
     $("nextBtn").classList.add("show");
     sfx.wrong();
   }
@@ -1521,7 +1519,7 @@ function moveCar(animate) {
     car.classList.add("driving");
     setTimeout(() => car.classList.remove("driving"), 700);
   }
-  $("progressLabel").textContent = Math.round(progress * 100) + "% menuju finish";
+  $("progressLabel").textContent = Math.round(progress * 100) + "% to finish";
 }
 
 function spawnSmoke() {
@@ -1595,11 +1593,11 @@ function finishGame() {
   });
 
   let title, msg;
-  if (pct === 100) { title = "Balapan Sempurna! 🏆"; msg = "Kamu menjawab semua soal dengan benar. Mobil mencapai garis finish!"; }
-  else if (pct >= 80) { title = "Luar Biasa! 🥇"; msg = "Pemahamanmu tentang Pancasila dan norma sangat kuat. Hampir sempurna!"; }
-  else if (pct >= 60) { title = "Balapan Bagus! 🚗"; msg = "Pemahamanmu sudah baik. Pelajari kembali soal yang salah agar mobilmu melaju lebih jauh."; }
-  else if (pct >= 40) { title = "Terus Semangat! 📚"; msg = "Kamu sudah berusaha. Baca ulang Bab 1 dan Bab 2 lalu coba lagi ya!"; }
-  else { title = "Jangan Menyerah! 💪"; msg = "Pelajari kembali nilai-nilai Pancasila dan norma-norma dalam kehidupan sehari-hari."; }
+  if (pct === 100) { title = "Perfect Race! 🏆"; msg = "You answered every question correctly. The car reached the finish line in style!"; }
+  else if (pct >= 80) { title = "Outstanding! 🥇"; msg = "Your understanding of Pancasila and norms is very strong. Almost perfect!"; }
+  else if (pct >= 60) { title = "Good Race! 🚗"; msg = "Solid understanding. Review the questions you missed to move your car even further next time."; }
+  else if (pct >= 40) { title = "Keep Going! 📚"; msg = "You've made an effort. Reread Chapters 1 and 2 and try again — you can do better!"; }
+  else { title = "Don't Give Up! 💪"; msg = "Study the values of Pancasila and norms in daily life once more, then try again."; }
 
   $("resultTitle").textContent = title;
   $("resultMsg").textContent = msg;
@@ -1615,7 +1613,7 @@ function finishGame() {
         <div class="chapter-row-bar"><div class="chapter-row-fill" style="width:${p}%;background:${color}"></div></div>
       </div>`;
   }).join("");
-  breakdown.innerHTML = `<div class="chapter-breakdown-title">Performa per Kategori</div>` + rows;
+  breakdown.innerHTML = `<div class="chapter-breakdown-title">Performance by Category</div>` + rows;
 
   if (pct >= 80) launchConfetti();
 
@@ -1653,8 +1651,8 @@ function renderHistory() {
     body.innerHTML = `
       <div class="empty-state">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-        <h3>Belum ada riwayat</h3>
-        <p>Selesaikan satu kuis dan hasilnya akan muncul di sini.</p>
+        <h3>No history yet</h3>
+        <p>Finish a quiz and your results will appear here.</p>
       </div>`;
     return;
   }
@@ -1662,9 +1660,9 @@ function renderHistory() {
   const avgScore = Math.round(all.reduce((s, r) => s + r.score, 0) / all.length);
   const bestScore = Math.max(...all.map(r => r.score));
   summary.innerHTML = `
-    <div class="history-summary-card"><span class="sum-val">${all.length}</span><span class="sum-lbl">Total Percobaan</span></div>
-    <div class="history-summary-card"><span class="sum-val">${avgScore}</span><span class="sum-lbl">Rata-rata Skor</span></div>
-    <div class="history-summary-card"><span class="sum-val">${bestScore}</span><span class="sum-lbl">Skor Terbaik</span></div>
+    <div class="history-summary-card"><span class="sum-val">${all.length}</span><span class="sum-lbl">Total Attempts</span></div>
+    <div class="history-summary-card"><span class="sum-val">${avgScore}</span><span class="sum-lbl">Average Score</span></div>
+    <div class="history-summary-card"><span class="sum-val">${bestScore}</span><span class="sum-lbl">Best Score</span></div>
   `;
 
   const filtered = historyFilter
@@ -1672,7 +1670,7 @@ function renderHistory() {
     : all;
 
   if (filtered.length === 0) {
-    body.innerHTML = `<div class="empty-state"><h3>Tidak ada hasil</h3><p>Tidak ada siswa dengan nama "${escapeHtml(historyFilter)}".</p></div>`;
+    body.innerHTML = `<div class="empty-state"><h3>No matches</h3><p>No student matches "${escapeHtml(historyFilter)}".</p></div>`;
     return;
   }
 
@@ -1680,12 +1678,12 @@ function renderHistory() {
     const isYou = playerName && r.name.toLowerCase() === playerName.toLowerCase();
     const scoreCls = r.accuracy >= 80 ? "good" : r.accuracy >= 60 ? "mid" : "low";
     const d = new Date(r.date);
-    const dateStr = d.toLocaleDateString('id-ID', { day: 'numeric', month: 'short' }) + ' · ' +
-                    d.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+    const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' · ' +
+                    d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
     return `
       <tr class="${isYou ? "is-you" : ""}">
         <td>${i + 1}</td>
-        <td><strong>${escapeHtml(r.name)}</strong>${isYou ? '<span class="you-tag">KAMU</span>' : ""}</td>
+        <td><strong>${escapeHtml(r.name)}</strong>${isYou ? '<span class="you-tag">YOU</span>' : ""}</td>
         <td>${escapeHtml(r.class)}</td>
         <td><span class="score-pill ${scoreCls}">${r.score}</span></td>
         <td>${r.correct}/${r.total}</td>
@@ -1700,22 +1698,22 @@ function renderHistory() {
     <div class="table-wrap">
       <table class="history-table">
         <thead><tr>
-          <th>#</th><th>Nama</th><th>Kelas</th><th>Skor</th><th>Benar</th>
-          <th>Akurasi</th><th>Streak</th><th>Waktu</th><th>Tanggal</th>
+          <th>#</th><th>Name</th><th>Class</th><th>Score</th><th>Correct</th>
+          <th>Accuracy</th><th>Streak</th><th>Time</th><th>Date</th>
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>
     <p style="text-align:center;margin-top:16px;font-size:12px;color:var(--n-400);">
-      Menampilkan ${filtered.length} dari ${all.length} percobaan ·
-      <a href="#" id="clearAllLink" style="color:var(--danger-600);font-weight:700;text-decoration:none;">Hapus semua riwayat</a>
+      Showing ${filtered.length} of ${all.length} attempts ·
+      <a href="#" id="clearAllLink" style="color:var(--danger-600);font-weight:700;text-decoration:none;">Clear all history</a>
     </p>`;
 
   const link = document.getElementById("clearAllLink");
   if (link) {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      if (confirm("Hapus semua riwayat? Tidak dapat dibatalkan.")) {
+      if (confirm("Delete all history? This cannot be undone.")) {
         localStorage.removeItem(STORAGE_KEY);
         renderHistory();
       }
@@ -1731,23 +1729,23 @@ $("historySearch").addEventListener("input", (e) => {
 function exportCSV() {
   const all = loadResults();
   if (all.length === 0) {
-    alert("Belum ada riwayat untuk diekspor.");
+    alert("No history to export.");
     return;
   }
-  const header = ["Nama", "Kelas", "Skor", "Benar", "Salah", "Total", "Akurasi", "Streak", "Waktu (detik)", "Tanggal"];
+  const header = ["Name", "Class", "Score", "Correct", "Wrong", "Total", "Accuracy", "Best Streak", "Time (s)", "Date"];
   const rows = all.map(r => [
     `"${String(r.name).replace(/"/g, '""')}"`,
     `"${String(r.class).replace(/"/g, '""')}"`,
     r.score, r.correct, r.wrong, r.total, r.accuracy + "%",
     r.bestStreak, r.timeSeconds,
-    `"${new Date(r.date).toLocaleString('id-ID')}"`
+    `"${new Date(r.date).toLocaleString('en-US')}"`
   ].join(","));
   const csv = [header.join(","), ...rows].join("\n");
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "laporan_pancasila_kelas5_" + new Date().toISOString().slice(0, 10) + ".csv";
+  a.download = "pancasila_grade5_report_" + new Date().toISOString().slice(0, 10) + ".csv";
   a.click();
   URL.revokeObjectURL(url);
 }
